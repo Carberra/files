@@ -1,0 +1,7 @@
+# www.robotstxt.org/
+
+# Allow crawling of index
+User-agent: *
+Disallow: /
+Allow: /index.html
+Allow: /$
