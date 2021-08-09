@@ -26,6 +26,10 @@ a {
     color: #ffffff;
 }
 
+i {
+    color: #adadad;
+}
+
 li:not(:last-child) {
     padding-bottom: 15px;
 }
