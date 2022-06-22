@@ -1,24 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
-
-@font-face {
-    font-family: 'RaveParty Wide Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('RaveParty Wide Regular'), url('../fnt/Rave Wide.woff') format('woff');
-}
+@import url("https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,400;1,500&family=Zen+Dots&display=swap");
 
 h1 {
-    font-family: "RaveParty Wide Regular", sans-serif;
-    background-image: linear-gradient(to right, #1987bd, #9e1cf3);
+    font-family: "Zen Dots", sans-serif;
+    font-size: 60px;
+    background-image: linear-gradient(to right, #9e1cf3, #1987bd);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline;
 }
 
+h2 {
+    font-family: "Anybody", sans-serif;
+    font-size: 35px;
+    font-style: italic;
+}
+
 body {
     background-color: #0c0c0c;
     color: #ffffff;
-    font-family: "Fira Sans", sans-serif;
+    font-family: "Anybody", sans-serif;
+    font-size: 25px;
     margin: 30px;
 }
 
