@@ -1,36 +1,103 @@
-@import url("https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,400;1,500&family=Zen+Dots&display=swap");
+@font-face {
+    font-family: "D-DIN";
+    src: "static/fnt/D-DIN.otf";
+}
+
+@font-face {
+    font-family: 'Zen Dots';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/zendots/v12/XRXX3ICfm00IGoesQdaDRss.ttf) format('truetype');
+  }
+
+body,
+html {
+    background-color: #0f0f0f;
+    color: #dddddd;
+    font-family: "D-DIN", sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
 
 h1 {
     font-family: "Zen Dots", sans-serif;
-    font-size: 60px;
-    background-image: linear-gradient(to right, #9e1cf3, #1987bd);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: inline;
+    font-size: 2em;
 }
 
 h2 {
-    font-family: "Anybody", sans-serif;
-    font-size: 35px;
-    font-style: italic;
+    font-size: 1.5em;
 }
 
-body {
-    background-color: #0c0c0c;
-    color: #ffffff;
-    font-family: "Anybody", sans-serif;
-    font-size: 25px;
-    margin: 30px;
+main {
+    max-width: 30em;
+    background-color: #1c1c1c;
+    border-radius: 1em;
+    text-align: center;
+    padding: 2em;
+    box-shadow: 0px 12px 24px -4px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 12px 24px -4px rgba(0, 0, 0, 0.5);
 }
 
 a {
-    color: #ffffff;
+    color: inherit;
 }
 
-i {
+.icon {
+    height: 2em;
+    filter: invert(75%);
+    margin: 0.8em 0.8em 0.8em 0;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    margin: 2.5em;
+}
+
+footer > div {
+    display: flex;
+    align-items: center;
+}
+
+.footer-item {
+    filter: invert(50%);
+    margin: 0.8em;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: "Michroma", sans-serif;
+    font-size: smaller;
+    transition: 0.1s ease-in-out filter;
+}
+
+.footer-item:hover {
+    filter: invert(0%);
+}
+
+.footer-item ~ .footer-item > .icon {
+    margin: 0.8em;
+}
+
+th,
+td {
+    padding: 5px;
+}
+
+table, th, td {
+    border: 1px solid white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.note {
     color: #adadad;
-}
-
-li:not(:last-child) {
-    padding-bottom: 15px;
+    font-style: italic;
 }
