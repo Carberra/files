@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Uh oh!</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/static/img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
 
-    <link rel="stylesheet" href="/static/css/normalize.css">
-    <link rel="stylesheet" href="/static/css/requirements.css">
+    <link rel="stylesheet" href="static/css/normalize.css" />
+    <link rel="stylesheet" href="static/css/requirements.css" />
+  </head>
+  <body>
+    <main>
+      <h1>404</h1>
 
-    <script type="text/javascript">
-        var apiUrl = "https://randomfox.ca/floof";
-
-        fetch(apiUrl)
-            .then((response) => response.json())
-            .then((data) => {
-                var img = document.createElement("img");
-                img.src = data.image;
-                document.getElementById("fox").appendChild(img);
-            }).catch(err => {});
-    </script>
-</head>
-<body>
-    <h1>404</h1>
-
-    <p id="text">The page you're looking for doesn't exist. Here's a picture of a fox to cheer you up.</p>
-    <div id="fox"></div>
-</body>
+      <p id="text">The page you're looking for doesn't exist.</p>
+    </main>
+  </body>
 </html>
